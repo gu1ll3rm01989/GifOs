@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/theme1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+    <title>Crear Gifs</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./assets/arrow.svg" alt="volver"></a>
+        <img src="./assets/gifOF_logo.png" alt="logo day" id="log-day">
+        <img src="assets/gifOF_logo_dark.png" alt="logo dark" id="log-dark">
+    </header>
+
+    <section id="upload-section" class="upload">
+        <video id="video"></video>
+        <article id="start" class="window">
+            <img src="./assets/window_img.png" alt="window">
+            <h4 class="titles">Crear Gifos</h4>
+            <h3>Aquí podrás crear tus propios guifos</h3>
+            <p>Crear tu guifo es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son: 1) Dar permisos de acceso a la cámara (sólo por el tiempo de uso) 2) Capturar tu momento guifo 3) Revisar el
+                momento 4) Listo para subir y compartir! ¿Quieres comenzar a crear tu guifo ahora?</p>
+            <button class="button2">Cancelar</button>
+            <button class="button1">Comenzar</button>
+        </article>
+        <article id="capture" class="window">
+            <h4 class="titles">Un Chequeo Antes de Empezar</h4>
+            <button><img src="./assets/camera_light.svg" alt="camara" ></button>
+            <button id="btn-capture">Capturar</button>
+
+        </article>
+        <article id="capture-ok" class="window">
+            <h4 class="titles">Capturando tu Gifo</h4>
+            <input type="time" name="cronometer" id="cronometer" class="cronometro">
+            <button id="btn-init"> Grabar</button>
+            <button id="btn-stop" class="button6">Listo</button>
+
+        </article>
+        <article id="preview" class="window">
+            <h4 class="titles">Vista previa</h4>
+            <input type="time" name="cronometer" id="cronometer2" class="cronometro">
+            <button><img src="./assets/forward.svg" alt="boton inicio"></button>
+            <input type="button" value="barra de avance">
+            <button class="button2">Repetir captura</button>
+            <button class="button1">Subir foto</button>
+
+        </article>
+        <article id="upload" class="window">
+            <h4 class="titles">Subiendo Gifo</h4>
+            <button class="button3"><img src="./assets/button3.svg" alt="cancelar"></button>
+            <img src="./assets/globe_img.png" alt="globo">
+            <p>Estamos subiendo tu Gifo</p>
+            <input type="button" value="barra de avance">
+            <p>Tiempo restante: 38 años algunos minutos</p>
+            <button class="button2">Cancelar</button>
+
+        </article>
+        <article id="exito" class="window">
+            <h4 class="titles">Gifo subido con exito</h4>
+            <p>Gifo creado con exito</p>
+            <button class="button3"><img src="./assets/button3.svg" alt="cancelar"></button>
+            <span><button class="button7">Copiar enlace Gifo</button>
+            <button class="button7">Descargar Gifo</button></span>
+            <button class="button1">Listo</button>
+
+        </article>
+
+
+
+
+    </section>
+    <section id="mis-gifos">
+        <h4 class="titles">Mis Gifos</h4>
+    </section>
+
+    <script src="./scripts/uploadvideo.js"></script>
+</body>
+
+</html>
